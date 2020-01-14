@@ -11,10 +11,19 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var cacheOfStrings: [String: String] = [:]
+    var cacheOfObjects: [String: AnyObject] = [:]
 
+
+    func foo(value: String) {
+        cacheOfStrings["1"] = value
+        cacheOfObjects["2"] = value as AnyObject
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        foo(value: Foo.nilPretendingToBeString())
+        cacheOfStrings["3"] = Foo.nilPretendingToBeString()
+        cacheOfObjects["4"] = Foo.nilPretendingToBeString() as AnyObject
         return true
     }
 

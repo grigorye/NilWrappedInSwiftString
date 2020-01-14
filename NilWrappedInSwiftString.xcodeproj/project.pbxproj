@@ -13,6 +13,7 @@
 		A163116223CDFC1700AEAE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A163116023CDFC1700AEAE7C /* Main.storyboard */; };
 		A163116423CDFC2A00AEAE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163116323CDFC2A00AEAE7C /* Assets.xcassets */; };
 		A163116723CDFC2A00AEAE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A163116523CDFC2A00AEAE7C /* LaunchScreen.storyboard */; };
+		A163117123CDFC9800AEAE7C /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = A163117023CDFC9800AEAE7C /* Foo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		A163116323CDFC2A00AEAE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A163116623CDFC2A00AEAE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A163116823CDFC2A00AEAE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A163116E23CDFC9800AEAE7C /* NilWrappedInSwiftString-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NilWrappedInSwiftString-Bridging-Header.h"; sourceTree = "<group>"; };
+		A163116F23CDFC9800AEAE7C /* Foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		A163117023CDFC9800AEAE7C /* Foo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,9 @@
 				A163116323CDFC2A00AEAE7C /* Assets.xcassets */,
 				A163116523CDFC2A00AEAE7C /* LaunchScreen.storyboard */,
 				A163116823CDFC2A00AEAE7C /* Info.plist */,
+				A163116F23CDFC9800AEAE7C /* Foo.h */,
+				A163117023CDFC9800AEAE7C /* Foo.m */,
+				A163116E23CDFC9800AEAE7C /* NilWrappedInSwiftString-Bridging-Header.h */,
 			);
 			path = NilWrappedInSwiftString;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					A163115623CDFC1700AEAE7C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -138,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A163117123CDFC9800AEAE7C /* Foo.m in Sources */,
 				A163115F23CDFC1700AEAE7C /* ViewController.swift in Sources */,
 				A163115B23CDFC1700AEAE7C /* AppDelegate.swift in Sources */,
 				A163115D23CDFC1700AEAE7C /* SceneDelegate.swift in Sources */,
@@ -284,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 898SX5RV3X;
 				INFOPLIST_FILE = NilWrappedInSwiftString/Info.plist;
@@ -293,6 +303,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grigorye.NilWrappedInSwiftString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NilWrappedInSwiftString/NilWrappedInSwiftString-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 898SX5RV3X;
 				INFOPLIST_FILE = NilWrappedInSwiftString/Info.plist;
@@ -311,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grigorye.NilWrappedInSwiftString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NilWrappedInSwiftString/NilWrappedInSwiftString-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
